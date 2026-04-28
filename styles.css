@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* HLAVIČKA */
+thead th {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+/* červené sloupce v headeru kromě prvního */
+thead th:not(:first-child) {
+    background-color: #b22222;
+}
+
+/* první sloupec (červený) */
+tbody td:first-child {
+    background-color: #b22222;
+    color: white;
+    font-weight: bold;
+}
+
+/* obsah tabulky */
+tbody td {
+    background-color: #d3d3d3;
+}
+
+/* footer */
+tfoot td {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+/* první buňka ve footeru */
+tfoot td:first-child {
+    background-color: #b22222;
+    font-weight: bold;
+    text-align: left;
+}
